@@ -12,7 +12,7 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span class="name">@alehr45</span>
+          <span class="name">Alex Lehr</span>
         </a>
       </h2>
       <nav>
