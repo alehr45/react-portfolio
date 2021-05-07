@@ -1,27 +1,48 @@
-import React from 'react';
+import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
+  const  categories = [
+    { name: 'Portfolio', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
+    { name: 'Resume', description: 'Portraits of people in my life' },
+
+  ];
+
+  const handleClick = () => {
+    console.log("click handled")
+  }
 
   return (
-    <header>
-    <h2>
-      <a href="/">
-        <span role="img" aria-label="camera"> 📸</span> @alehr45
-      </a>
-    </h2>
-    <nav>
-      <ul className="flex-row">
-        <li className="mx-2">
-          <a href="#about">
-            About me
-          </a>
-        </li>
-        <li>
-          <span>Contact</span>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header data-testid="header" className="flex-row px-1">
+      <h2>
+        <a href="/">
+          <span class="name">@alehr45</span> 
+        </a>
+      </h2>
+      <nav>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <a href="#about" onClick={() => handleClick()}>
+              About me
+            </a>
+          </li>
+          <li className={"mx-2"}>
+            <span onClick={() => handleClick()}>
+              Contact
+            </span>
+          </li>
+          {
+            categories.map((category) => (
+              <li className="mx-1" key={category.name} >
+                <span onClick={() => { handleClick(); }}>
+                 {capitalizeFirstLetter(category.name)}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
   );
 }
 
