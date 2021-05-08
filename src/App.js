@@ -3,13 +3,14 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
     
     { name: "Portfolio", description: "My up-to-date portfolio" },
-    { name: "Resume", description: "Past experience and job history" },
+    { name: "Resume", description: "My proficiencies and resume" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -33,6 +34,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
