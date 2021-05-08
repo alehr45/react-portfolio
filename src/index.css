@@ -18,6 +18,11 @@ main {
 
 }
 
+.name {
+  font-size: 45px;
+  color: aqua;
+}
+
 * {
   box-sizing: border-box;
 }
