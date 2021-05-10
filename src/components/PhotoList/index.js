@@ -10,33 +10,44 @@ const PhotoList = ({ category }) => {
     {
       name: 'Weekly Food Planner 1.0',
       category: 'Portfolio',
-      description: 'https://alehr45.github.io/weekly-food-planner',
-      link: "https://github.com/alehr45/weekly-food-planner "
+      description:'An app for meal planning',
+      link: "https://github.com/alehr45/weekly-food-planner",
+      link2: "https://alehr45.github.io/weekly-food-planner"
     },
     {
       name: 'Gamer-Spot',
       category: 'Portfolio',
-      description: 'https://gamer-spot-45.herokuapp.com/, https://github.com/alehr45/gamer-spot',
+      description: 'An online video game store',
+      link: "https://github.com/alehr45/gamer-spot",
+      link2: "https://gamer-spot-45.herokuapp.com"
     },
     {
       name: 'Team Profile Generator',
       category: 'Portfolio',
-      description: 'https://alehr45.github.io/team-profile-generator/, https://github.com/alehr45/team-profile-generator',
+      description: 'A node.js team profile generator',
+      link: 'https://github.com/alehr45/team-profile-generator',
+      link2: "https://alehr45.github.io/team-profile-generator"
     },
     {
       name: 'Note Taker',
       category: 'Portfolio',
-      description: 'https://note-taker005.herokuapp.com/, https://github.com/alehr45/note-taker',
+      description: 'A quick and easy to use note taker application',
+      link: ' https://github.com/alehr45/note-taker',
+      link2: "https://note-taker005.herokuapp.com"
     },
     {
       name: 'Budget Tracker',
       category: 'Portfolio',
-      description: 'https://budget-tracker-45.herokuapp.com/, https://github.com/alehr45/budget-tracker',
+      description: 'A simple budget tracker app with online and offline functionality',
+      link: 'https://github.com/alehr45/budget-tracker',
+      link2: "https://budget-tracker-45.herokuapp.com"
     },
        {
       name: 'Run Buddy',
       category: 'Portfolio',
-      description: 'https://alehr45.github.io/run-buddy/, https://github.com/alehr45/run-buddy',
+      description: '',
+      link: 'https://github.com/alehr45/run-buddy',
+      link2: "https://alehr45.github.io/run-buddy"
     },
   ]);
 

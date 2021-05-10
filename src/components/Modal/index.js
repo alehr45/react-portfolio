@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, index, link  } = currentPhoto;
+  const { name, description, category, index, link, link2 } = currentPhoto;
 
  
   return (
@@ -16,11 +16,11 @@ const Modal = ({ onClose, currentPhoto }) => {
         <button type="button" onClick={onClose}>
           Close
         </button>
-        <button type="button" onClick={event =>  window.location.href={link}}>
+        <button type="button" onClick={event =>  window.location.href=`${link2}`}>
           Go to site
         </button>
         
-        <button type="button" onClick={event =>  window.location.href='http://www.github.com/alehr45/{name}'}>
+        <button type="button" onClick={event =>  window.location.href=`${link}`}>
           Go to Github repo
         </button>
       </div>

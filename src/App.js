@@ -4,11 +4,12 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
   const [categories] = useState([
-    
     { name: "Portfolio", description: "My up-to-date portfolio" },
     { name: "Resume", description: "My proficiencies" },
   ]);
@@ -28,11 +29,14 @@ function App() {
         {!contactSelected ? (
           <>
             <Portfolio currentCategory={currentCategory}></Portfolio>
+            <Resume></Resume>
             <About></About>
           </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+        ) : (<ContactForm></ContactForm>)
+        
+        
+        
+        }
       </main>
       <Footer></Footer>
     </div>

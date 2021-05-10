@@ -32,6 +32,7 @@ function Nav(props) {
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
+          
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -48,6 +49,7 @@ function Nav(props) {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
+            
           ))}
         </ul>
       </nav>

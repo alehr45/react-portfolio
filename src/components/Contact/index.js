@@ -37,7 +37,7 @@ function ContactForm() {
   }
 
   function showAlert() {
-    alert ("Thanks for reaching out! Ill get back to you ASAP");
+    alert ("Your form has been submitted. Thanks!");
   }
 
   return (
