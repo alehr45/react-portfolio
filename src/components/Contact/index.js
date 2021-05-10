@@ -36,6 +36,10 @@ function ContactForm() {
     console.log(formState);
   }
 
+  function showAlert() {
+    alert ("Thanks for reaching out! Ill get back to you ASAP");
+  }
+
   return (
     <section>
       <h1>Contact me</h1>
@@ -72,7 +76,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit" onClick={showAlert} >Submit</button>
       </form>
     </section>
   );

@@ -6,10 +6,10 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  --secondary: #ce791d;
   --tertiary: #B12704;
   --light: #fafafa;
-  --blue:  #195474;
+  --blue:  #505561;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -17,6 +17,19 @@ main {
   --spacing-five: calc(2.5rem);
 
 }
+
+.about{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.facebook{
+
+  height: 50px;
+  width: 50px;
+}
+
+
 
 .container {
   margin: 20px;
@@ -32,16 +45,16 @@ justify-content: center;
 }
 
 .github{
-  padding:3px;
+  padding:8px;
 }
 
 .linkedin{
 
-padding: 6px;
+padding: 10px;
 }
 .name {
   font-size: 45px;
-  color: #9d9d9d;
+  color: var(--secondary);
 }
 
 * {
@@ -232,6 +245,8 @@ textarea {
 }
 
 .my-2 {
+
+
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
 }
