@@ -25,6 +25,7 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        
         setResumeSelected={setResumeSelected}
       ></Nav>
       <main>
@@ -41,8 +42,8 @@ function App() {
           <ContactForm></ContactForm>
 )
         } 
- 
-       
+        
+        
        
         
       </main>

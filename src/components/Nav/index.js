@@ -44,6 +44,7 @@ function Nav(props) {
               <span
                 onClick={() => {setCurrentCategory(category);
                   setContactSelected(false);
+                  setResumeSelected(false);
                   
                 }}
               >
