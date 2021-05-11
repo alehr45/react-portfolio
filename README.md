@@ -22,7 +22,7 @@ A SPA portfolio made with react
 https://alehr45.github.io/react-portfolio/
 
 ### **Usage**  
-To showcase my past experince and talents.
+To showcase my past experience and talents.
 
 ### **Contributors**  
 alehr45
