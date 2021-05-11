@@ -9,6 +9,7 @@ import Resume from "./components/Resume";
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
+
   const [categories] = useState([
     { name: "Portfolio", description: "My up-to-date portfolio" },
     { name: "Resume", description: "My proficiencies" },
@@ -24,19 +25,26 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        setResumeSelected={setResumeSelected}
       ></Nav>
       <main>
+
+
         {!contactSelected ? (
           <>
+
             <Portfolio currentCategory={currentCategory}></Portfolio>
             <Resume></Resume>
             <About></About>
           </>
-        ) : (<ContactForm></ContactForm>)
+        ) : (
+          <ContactForm></ContactForm>
+)
+        } 
+ 
+       
+       
         
-        
-        
-        }
       </main>
       <Footer></Footer>
     </div>

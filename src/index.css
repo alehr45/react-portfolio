@@ -6,16 +6,29 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #ce791d;
+  --secondary: #d59f15;
   --tertiary: #B12704;
   --light: #fafafa;
-  --blue:  #505561;
+  --blue:  #2c3234;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
+}
+
+.flex-row.px-1{
+  background-image: url(./assets/cover/header.jpeg)
+}
+
+.-ml-1.mr-2.h-5.w-5.text-gray-400{
+  height: 15px;
+  
+}
+
+.button1 {
+  margin-top: 20px;
 }
 
 .about{
@@ -306,7 +319,7 @@ textarea {
 }
 
 .modalContainer {
-	background: var(--darker);
+	background: var(--blue);
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -315,7 +328,7 @@ textarea {
 }
 
 .modalTitle {
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 25px;
 }

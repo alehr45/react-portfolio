@@ -8,6 +8,7 @@ function Nav(props) {
     currentCategory,
     contactSelected,
     setContactSelected,
+    setResumeSelected
   } = props;
 
   useEffect(() => {
@@ -41,9 +42,9 @@ function Nav(props) {
               key={category.name}
             >
               <span
-                onClick={() => {
-                  setCurrentCategory(category);
+                onClick={() => {setCurrentCategory(category);
                   setContactSelected(false);
+                  
                 }}
               >
                 {capitalizeFirstLetter(category.name)}

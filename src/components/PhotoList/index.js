@@ -49,6 +49,7 @@ const PhotoList = ({ category }) => {
       link: 'https://github.com/alehr45/run-buddy',
       link2: "https://alehr45.github.io/run-buddy"
     },
+
   ]);
 
 
