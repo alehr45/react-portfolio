@@ -12,6 +12,9 @@
 
 ========================
 
+
+![alt text](screenshot.png)
+
 ### **Repository Name**  
 react-portfolio
 
